@@ -8,11 +8,15 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
+gem 'bootstrap-sass'
+gem 'devise'
 
 
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rails-controller-testing'
 end
 
 group :development do
