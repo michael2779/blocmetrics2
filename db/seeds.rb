@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do |n|
+  5.times do
+    Event.create!(
+    name: Faker::Hipster.sentence,
+    registered_application_id: n+1
+    )
+  end
+end
+
+puts "seed finished"

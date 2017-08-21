@@ -8,6 +8,16 @@
 </div>
 
 
+<div>
+  <h3>Here are the events associated with this registered app</h3>
+  <%= @events.count %>
+  <% @events.each do |this_event| %>
+    <div>
+      <%= this_event %>
+    </div>
+  <% end %>
+</div>
+
 <div class="col-md-4">
   <%= link_to "Back to index", registered_applications_path, class: 'btn btn-primary' %>
   <%= link_to "Edit", edit_registered_application_path(@registered_apps), class: 'btn btn-success' %>
