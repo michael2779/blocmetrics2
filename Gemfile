@@ -11,6 +11,8 @@ gem 'jbuilder',     '2.7.0'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'faker'
+gem 'chartkick'
+gem 'groupdate'
 
 
 group :development, :test do

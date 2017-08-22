@@ -18,6 +18,9 @@
   <% end %>
 </div>
 
+<%= pie_chart @registered_apps.event.group(:name).count %>
+<%= line_chart @registered_apps.event.group_by_day(:created_at).count %>
+
 <div class="col-md-4">
   <%= link_to "Back to index", registered_applications_path, class: 'btn btn-primary' %>
   <%= link_to "Edit", edit_registered_application_path(@registered_apps), class: 'btn btn-success' %>
